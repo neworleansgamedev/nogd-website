@@ -1,29 +1,28 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="NOGD" src="http://neworleansgamedev.com/images/nogd-head-logo.png" />
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  NOGD Website
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone Repo.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Clone the repo locally.
 
     ```shell
     # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    git clone git@github.com:neworleansgamedev/nogd-website.git
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your new site’s directory, install packages, and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd nogd-website/
+    npm install
     npm run develop
     ```
 
@@ -47,8 +46,3 @@
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
