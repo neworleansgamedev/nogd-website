@@ -12,7 +12,6 @@
     Clone the repo locally.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
     git clone git@github.com:neworleansgamedev/nogd-website.git
     ```
 
