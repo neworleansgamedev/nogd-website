@@ -1,0 +1,42 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #a527cc; 
+    color: #000000; 
+    padding: 20px; 
+  }
+  
+  .header h1 {
+    margin-bottom: 20px; 
+  }
+  
+  .content {
+    padding: 20px; 
+  }
+
+  .lists-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list {
+    flex-basis: calc(33.33% - 20px); 
+    margin-right: 20px; 
+  }
+  
+  .list-left {
+    order: 1; 
+  }
+  
+  .list-middle {
+    order: 2; 
+  }
+  
+  .list-right {
+    order: 3; 
+  }
+  
