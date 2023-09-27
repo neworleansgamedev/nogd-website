@@ -33,11 +33,11 @@ export default function Layout({ children }) {
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/donate">Donate</Nav.Link>
                 <NavDropdown title="Events" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/showntell">Show N Tell</NavDropdown.Item>
+                  <NavDropdown.Item href="/show-n-tell">Show N Tell</NavDropdown.Item>
                   <NavDropdown.Item href="/meetup">
                     Third Thursday Series
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/jam">
+                  <NavDropdown.Item href="/game-jams">
                     Game Jams
                   </NavDropdown.Item>
                 </NavDropdown>
