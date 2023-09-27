@@ -20,9 +20,6 @@ function IndexPage() {
             <li><Link to="/about">About</Link></li>
           </ul>
         </div>
-        <div className="logo-container">
-          <img src={nogdImage} alt="NOGD Image" className="logo" />
-        </div>
         <div>
           <iframe
             src="https://calendar.google.com/calendar/embed?src=c_817psp5emlgh8vgg432udrtv20%40group.calendar.google.com&ctz=America%2FChicago"
