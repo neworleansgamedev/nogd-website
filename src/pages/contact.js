@@ -1,22 +1,18 @@
 //Gerardo Colon
 //NOGD internship
 //Contact page 
-//Last edited: 9/13/2023
+//Last edited: 9/20/2023
 
-import * as React from 'react'
-import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import React from 'react';
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
 
-const ContactPage = () => {
-  
+function ContactPage() {
   return (
-
     <Layout PageTitle='Contact Page' PageHeading='Links'>
-      
       <div className="contact-container">
         <ul className="link-list">
-        
-        <li>
+          <li>
             <a href="/">Homepage</a>
           </li>
           <li>
@@ -50,6 +46,6 @@ const ContactPage = () => {
       </div>
     </Layout>
   );
-};
+}
 
 export default ContactPage;

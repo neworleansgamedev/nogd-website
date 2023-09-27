@@ -1,19 +1,17 @@
 //Gerardo Colon
 //NOGD internship
 //Index Page
-//Last edited:9/13/2023
+//Last edited:9/20/2023
 
 //classic imports
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import nogdImage from '../images/nogd.png'; 
-import './index.css'; 
+import nogdImage from '../images/nogd.png';
+import './index.css';
 
-const IndexPage = () => {
-  
+function IndexPage() {
   return (
-
     <Layout>
       <main>
         <div className="header">
@@ -38,6 +36,6 @@ const IndexPage = () => {
       </main>
     </Layout>
   );
-};
+}
 
 export default IndexPage;
