@@ -3,11 +3,10 @@
 //Donations Page
 //Last edited:9/20/2023
 
-import React, { useState } from 'react';
-import Layout from '../components/layout';
+import React, { useState } from "react";
 
 const DonatePage = () => {
-  const [donationAmount, setDonationAmount] = useState(10); 
+  const [donationAmount, setDonationAmount] = useState(10);
 
   const handleDonationChange = (event) => {
     const newAmount = parseFloat(event.target.value);
@@ -21,10 +20,11 @@ const DonatePage = () => {
     alert(`Thank you for your donation of $${donationAmount}!`);
   };
 
-  const paypalDonationLink = 'https://www.paypal.com/donate/?hosted_button_id=2N3TJ3FLJ7LDE';
+  const paypalDonationLink =
+    "https://www.paypal.com/donate/?hosted_button_id=2N3TJ3FLJ7LDE";
 
   return (
-    <Layout PageTitle='Donate' PageHeading='Support Us'>
+    <>
       <div className="donate-container">
         <p>Your support is greatly appreciated!</p>
         <form onSubmit={handleSubmit}>
@@ -42,9 +42,15 @@ const DonatePage = () => {
         </form>
         <p>Or choose from the following donation:</p>
         <ul>
-          <li>$10 <button onClick={() => setDonationAmount(10)}>Donate</button></li>
-          <li>$25 <button onClick={() => setDonationAmount(25)}>Donate</button></li>
-          <li>$50 <button onClick={() => setDonationAmount(50)}>Donate</button></li>
+          <li>
+            $10 <button onClick={() => setDonationAmount(10)}>Donate</button>
+          </li>
+          <li>
+            $25 <button onClick={() => setDonationAmount(25)}>Donate</button>
+          </li>
+          <li>
+            $50 <button onClick={() => setDonationAmount(50)}>Donate</button>
+          </li>
         </ul>
         <a
           href={paypalDonationLink}
@@ -61,7 +67,7 @@ const DonatePage = () => {
           ></div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

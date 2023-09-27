@@ -6,7 +6,6 @@
 //classic imports
 import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/layout';
 import TitledList from '../components/TitledList'; 
 
 // Lists
@@ -30,13 +29,11 @@ const list3 = [
 
 function AboutPage() {
   return (
-    <Layout PageHeading='About' PageTitle='About Page'>
       <div className="lists-container">
         <TitledList title="Who?" list={list1} />
         <TitledList title="What?" list={list2} />
         <TitledList title="Where?" list={list3} />
       </div>
-    </Layout>
   );
 }
 

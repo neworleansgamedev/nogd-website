@@ -5,12 +5,11 @@
 
 //classic imports
 import React from 'react';
-import Layout from '../components/layout';
 import { Link } from 'gatsby';
 
 function JamPage() {
   return (
-    <Layout PageTitle='Jam Page' PageHeading='Game Jams'>
+    <>
       <section>
         <h2>Game Jam</h2>
         <p>
@@ -57,7 +56,7 @@ function JamPage() {
           Have questions? We'd love to hear from you! Please don't hesitate to <Link to="/contact">contact us</Link>.
         </p>
       </section>
-    </Layout>
+    </>
   );
 }
 

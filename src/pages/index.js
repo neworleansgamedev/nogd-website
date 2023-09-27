@@ -6,14 +6,12 @@
 //classic imports
 import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/layout';
 import nogdImage from '../images/nogd.png';
 import './index.css';
 
 function IndexPage() {
   return (
-    <Layout>
-      <main>
+      <>
         <div className="header">
           <h1>New Orleans Game Developer</h1>
           <p>Still unfinished, working on it!</p>
@@ -33,8 +31,7 @@ function IndexPage() {
             scrolling="no"
           ></iframe>
         </div>
-      </main>
-    </Layout>
+      </>
   );
 }
 
