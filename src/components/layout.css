@@ -3,11 +3,19 @@
     flex-direction: column;
     min-height: 100vh;
   }
+
+  header {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   
-  .header {
-    background-color: #a527cc; 
-    color: #000000; 
+  .navbar {
+    background-color: #613f99 !important; 
     padding: 20px; 
+  }
+
+  .nav-link {
+    color: #fff; 
   }
   
   .header h1 {
