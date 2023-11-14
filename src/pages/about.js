@@ -6,7 +6,10 @@
 //classic imports
 import React from 'react';
 import { Link } from 'gatsby';
-import TitledList from '../components/TitledList'; 
+import TitledList from '../components/TitledList';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 // Lists
 const list1 = [
@@ -26,14 +29,21 @@ const list3 = [
   "We also host an informal Hack Night at 7:00pm every Tuesday."
 ];
 
-
 function AboutPage() {
   return (
-      <div className="lists-container">
-        <TitledList title="Who?" list={list1} />
-        <TitledList title="What?" list={list2} />
-        <TitledList title="Where?" list={list3} />
-      </div>
+    <Container>
+      <Row>
+        <Col>
+          <TitledList title="Who?" list={list1} />
+        </Col>
+        <Col>
+          <TitledList title="What?" list={list2} />
+        </Col>
+        <Col>
+          <TitledList title="Where?" list={list3} />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

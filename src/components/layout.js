@@ -29,13 +29,12 @@ export default function Layout({ children }) {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
-              <Nav.Link href="/about">About Us</Nav.Link>
               <Nav.Link href="/donate">Donate</Nav.Link>
               <NavDropdown title="Events" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/show-n-tell">
                   Show N Tell
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/meetup">
+                <NavDropdown.Item href="/thursday">
                   Third Thursday Series
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/game-jams">Game Jams</NavDropdown.Item>

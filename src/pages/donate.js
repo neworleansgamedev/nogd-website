@@ -1,9 +1,8 @@
 //Gerardo Colon
-//NOGD internship
-//Donations Page
-//Last edited:9/20/2023
+//
 
 import React, { useState } from "react";
+import { Container, Form, Button, ListGroup } from "react-bootstrap";
 
 const DonatePage = () => {
   const [donationAmount, setDonationAmount] = useState(10);
@@ -24,34 +23,45 @@ const DonatePage = () => {
     "https://www.paypal.com/donate/?hosted_button_id=2N3TJ3FLJ7LDE";
 
   return (
-    <>
+    <Container>
       <div className="donate-container">
         <p>Your support is greatly appreciated!</p>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="donationAmount">Enter donation amount:</label>
-          <input
-            type="number"
-            id="donationAmount"
-            name="donationAmount"
-            value={donationAmount}
-            onChange={handleDonationChange}
-            min="1"
-            step="1"
-          />
-          <button type="submit">Donate</button>
-        </form>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group controlId="donationAmount">
+            <Form.Label>Enter donation amount:</Form.Label>
+            <Form.Control
+              type="number"
+              value={donationAmount}
+              onChange={handleDonationChange}
+              min="1"
+              step="1"
+            />
+          </Form.Group>
+          <Button type="submit" variant="primary">
+            Donate
+          </Button>
+        </Form>
         <p>Or choose from the following donation:</p>
-        <ul>
-          <li>
-            $10 <button onClick={() => setDonationAmount(10)}>Donate</button>
-          </li>
-          <li>
-            $25 <button onClick={() => setDonationAmount(25)}>Donate</button>
-          </li>
-          <li>
-            $50 <button onClick={() => setDonationAmount(50)}>Donate</button>
-          </li>
-        </ul>
+        <ListGroup horizontal>
+          <ListGroup.Item>
+            $10{" "}
+            <Button variant="primary" onClick={() => setDonationAmount(10)}>
+              Donate
+            </Button>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            $25{" "}
+            <Button variant="primary" onClick={() => setDonationAmount(25)}>
+              Donate
+            </Button>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            $50{" "}
+            <Button variant="primary" onClick={() => setDonationAmount(50)}>
+              Donate
+            </Button>
+          </ListGroup.Item>
+        </ListGroup>
         <a
           href={paypalDonationLink}
           target="_blank"
@@ -66,8 +76,13 @@ const DonatePage = () => {
             style={{ width: `${(donationAmount / 100) * 100}%` }}
           ></div>
         </div>
+
+        <p>Give people a place to donate money to us.</p>
+        <p>Let people tell us they have the hardware to donate so we can coordinate with them to get it.</p>
+        <p>Describe why we want donations:</p>
+        <p>We rely on the generous contributions of individuals like you to continue our work. Your donations help us to maintain and improve our programs, acquire necessary hardware and equipment, and expand our reach to more communities. With your support, we can make a meaningful difference in the lives of many people and continue to foster a supportive and innovative tech community.</p>
       </div>
-    </>
+    </Container>
   );
 };
 

@@ -14,3 +14,31 @@
     width: 100px; 
     height: auto; 
   }
+
+  .map-container {
+    margin-top: 20px;
+    border: 1px solid #800080; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .map-container iframe {
+    border: 1px solid #800080; 
+  }
+
+  .banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-image {
+    width: 150%;
+    max-height: 200px; 
+  }
+
+  .header {
+    text-align: center;
+  }
+  

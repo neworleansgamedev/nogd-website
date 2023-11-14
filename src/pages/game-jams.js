@@ -6,58 +6,55 @@
 //classic imports
 import React from 'react';
 import { Link } from 'gatsby';
+import { Container, Row, Col } from 'react-bootstrap';
+import jamImage from "../images/nogd3.jpg"; 
 
 function JamPage() {
   return (
-    <>
-      <section>
-        <h2>Game Jam</h2>
-        <p>
-          Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam 
-        </p>
-        <p>
-          Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam 
-        </p>
-      </section>
+    <Container>
+      <Row>
+        <Col>
+          <section className="mt-4 text-center">
+            <h1>Welcome to the Game Jam Page</h1>
+            <p>
+              Join us for our exciting game jam events! Work with fellow game developers and enthusiasts to create amazing games.
+            </p>
+          </section>
+        </Col>
+      </Row>
 
-      <section>
-        <h2>Game Jam Stuff</h2>
-        <ul>
-          <li>
-            <strong>Game Jam stuff</strong>
-            <p >Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam </p>
-          </li>
-          <li>
-            <strong>Game Jam</strong>
-            <p> Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam </p>
-          </li>
-          <li>
-            <strong>Game Jam</strong>
-            <p> Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam </p>
-          </li>
-          <li>
-            <strong>More stuff</strong>
-            <p> Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam .</p>
-          </li>
-        </ul>
-      </section>
+      <Row>
+        <Col>
+          <section className="mt-4 text-center">
+            <h2>Get Involved</h2>
+            <p>
+              Whether you're a seasoned developer or just starting, there's a place for you in our community. Join us to learn, grow, and have fun!
+            </p>
+          </section>
+        </Col>
+      </Row>
 
-      <section>
-        <h2>Get Involved</h2>
-        <p>
-          Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam Game Jam .
-        </p>
+      <Row>
+        <Col>
+          <section className="mt-4 text-center">
+            <h2>Contact Us</h2>
+            <p>
+              Do you have any questions or ideas for collaboration? Reach out to us today! <Link to="/contact">Contact us here</Link>.
+            </p>
+          </section>
+        </Col>
+      </Row>
 
-      </section>
-
-      <section>
-        <h2>Contact Us</h2>
-        <p>
-          Have questions? We'd love to hear from you! Please don't hesitate to <Link to="/contact">contact us</Link>.
-        </p>
-      </section>
-    </>
+      <Row>
+        <Col>
+          <section className="mt-4 text-center">
+            <img src={jamImage} alt="Game Jam Image" style={{ maxWidth: '75%', height: 'auto' }} />
+          </section>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
 export default JamPage;
+
