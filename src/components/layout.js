@@ -30,17 +30,8 @@ export default function Layout({ children }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-              <Nav.Link href="/donate">Donate</Nav.Link>
-              <NavDropdown title="Events" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/show-n-tell">
-                  Show N Tell
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/thursday">
-                  Third Thursday Series
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/game-jams">Game Jams</NavDropdown.Item>
-              </NavDropdown>
+              
+              <Nav.Link target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=2N3TJ3FLJ7LDE">Donate</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -54,4 +45,24 @@ export default function Layout({ children }) {
       </Container>
     </Container>
   );
+
+  /*
+    TODO: Restore event pages
+
+    <NavDropdown title="Events" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/show-n-tell">
+                  Show N Tell
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/thursday">
+                  Third Thursday Series
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/game-jams">Game Jams</NavDropdown.Item>
+              </NavDropdown>
+
+
+    TODO: Fix Contact Page
+
+              <Nav.Link href="/contact">Contact</Nav.Link>
+
+  **/
 }
