@@ -8,6 +8,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
+import nogd4Image from "../images/nogd4.jpg"; 
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./layout.css";
@@ -43,6 +45,9 @@ export default function Layout({ children }) {
           </Navbar.Collapse>
         </Navbar>
       </Container>
+        <div className="banner-container">
+        </div>
+    
       <Container as={"main"}>{children}</Container>
       <Container fluid as={"footer"}>
         Footer

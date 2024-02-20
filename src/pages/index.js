@@ -16,9 +16,7 @@ import "./index.css";
 function IndexPage() {
   return (
       <Container>
-      <div className="banner-container">
-        <img src={nogd4Image} alt="NOGD4" className="banner-image" />
-      </div>
+
       <Row>
         <Container>
           <h1 className="header">New Orleans Game Developers</h1>
