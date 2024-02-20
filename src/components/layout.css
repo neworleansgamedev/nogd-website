@@ -59,3 +59,11 @@
 main.container {
   margin-top: 40px;
 }
+
+h1.header {
+  margin-bottom: 50px;
+}
+
+div.card-body {
+  min-height: 200px;
+}
