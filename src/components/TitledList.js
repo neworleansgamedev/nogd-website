@@ -1,7 +1,3 @@
-//Gerardo Colon
-//NOGD internship
-//tilted list Page
-//Last edited:9/20/2023
 import React from 'react';
 
 function TitledList({ title, list }) {

@@ -1,9 +1,3 @@
-//Gerardo Colon
-//NOGD internship
-//Jam Page
-//Last edited:9/20/2023
-
-//classic imports
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';

@@ -1,8 +1,3 @@
-//Gerardo Colon
-//NOGD internship
-//Contact page
-//Last edited: 9/20/2023
-
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 

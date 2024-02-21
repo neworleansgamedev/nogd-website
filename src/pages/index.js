@@ -1,9 +1,3 @@
-//Gerardo Colon
-//NOGD internship
-//Index Page
-//Last edited:9/20/2023
-
-//classic imports
 import React from "react";
 import Layout from "../components/layout";
 import ExampleCalendar from "../components/calendar";

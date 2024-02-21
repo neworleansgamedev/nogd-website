@@ -1,9 +1,3 @@
-//Gerardo Colon
-//NOGD internship
-//About Page
-//Last edited:9/20/2023
-
-//classic imports
 import React from 'react';
 import { Link } from 'gatsby';
 import TitledList from '../components/TitledList';

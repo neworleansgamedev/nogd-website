@@ -8,7 +8,7 @@ import nogdImage from "../images/nogd5.png";
 
 function ShowNTellPage() {
   return (
-    <Container>
+    <Container pageTitle = "Show N Tell">
       <Row className="my-5">
         <Col md={6} className="d-flex align-items-center">
           <div>
