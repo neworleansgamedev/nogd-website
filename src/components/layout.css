@@ -5,8 +5,20 @@
   }
 
   body.container-fluid {
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png');
     background-attachment: fixed;
+    background-blend-mode: multiply;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png'), linear-gradient(45deg, #2e1e48, #613f99, #23a6d5, #23d5ab);
+      animation: gradient linear 30s infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      100% {
+          background-position: 50% 0%;
+      }
+
   }
 
   header {
@@ -18,7 +30,7 @@
   }
   
   .navbar {
-    background-color: #613f99 !important; 
+    background: #613f99; 
     padding: 10px; 
   }
 
@@ -77,6 +89,7 @@ h1.header {
 
 div.calendar {
   background-color: white;
+  margin-top: 25px;
 }
 
 div.card-body {

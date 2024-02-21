@@ -54,7 +54,6 @@ function IndexPage() {
         </Col>
       </Row>
       <Row>
-        <p>Hang out with us</p>
       </Row>
       <Row>
       </Row>
