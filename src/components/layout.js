@@ -10,17 +10,30 @@ import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import nogd4Image from "../images/nogd4.jpg"; 
 
+import { Link, useStaticQuery, graphql } from 'gatsby'
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./layout.css";
 
-export default function Layout({ children }) {
+export default function Layout({ children, pageTitle }) {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <Container
       style={{ paddingLeft: 0, paddingRight: 0, marginLeft: 0, marginRight: 0 }}
       fluid
       as="body"
     >
+      <title>{data.site.siteMetadata.title}</title>      
       <Container fluid as={"header"}>
         <Navbar sticky="top" expand="lg">
           <Navbar.Brand className="justify-content-start" href="/">
@@ -37,6 +50,8 @@ export default function Layout({ children }) {
         </Navbar>
       </Container>
         <div className="banner-container">
+        <h1 className="header">{data.site.siteMetadata.title}</h1>
+
         </div>
     
       <Container as={"main"}>{children}</Container>

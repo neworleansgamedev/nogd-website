@@ -15,18 +15,14 @@ import "./index.css";
 
 function IndexPage() {
   return (
-      <Container>
+      <Container pageTitle="New Orleans Game Developers">
 
       <Row>
         <Container>
-          <h1 className="header">New Orleans Game Developers</h1>
-          <div className="logo-container">
-            <img src={nogdImage} alt="NOGD Logo" className="logo" />
-          </div>
         </Container>
       </Row>
       <Row>
-        <Col lg={4}>
+        <Col xs={4} lg={4}>
           <Card>
             <Card.Body>
               <Card.Title>Who?</Card.Title>
@@ -38,7 +34,7 @@ function IndexPage() {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4}>
+        <Col xs={4} lg={4}>
           <Card>
             <Card.Body>
               <Card.Title>What?</Card.Title>
@@ -50,7 +46,7 @@ function IndexPage() {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4}>
+        <Col xs={4} lg={4}>
           <Card>
             <Card.Body>
               <Card.Title>When & Where?</Card.Title>
