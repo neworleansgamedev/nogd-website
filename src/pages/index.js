@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import ExampleCalendar from "../components/calendar";
 import { Link } from "gatsby";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import nogdImage from "../images/nogd.png";
 import nogd4Image from "../images/nogd4.jpg"; 
 import "./index.css";
@@ -54,6 +54,16 @@ function IndexPage() {
         </Col>
       </Row>
       <Row>
+        <Col>
+          <Card className="CallToActionCard">
+            <Card.Body>
+              <Card.Title><h1>Come Hang Out With Us</h1></Card.Title>
+              <Card.Text>
+                <Button variant="primary">Join Our Discord</Button>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
       <Row>
       </Row>

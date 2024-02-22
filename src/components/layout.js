@@ -43,8 +43,9 @@ export default function Layout({ children, pageTitle }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              
               <Nav.Link target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=2N3TJ3FLJ7LDE">Donate</Nav.Link>
+              <Nav.Link target="_blank" href="https://docs.google.com/document/d/1a5bUupU_ql1GKaAYlHxwL3R_xWJ0evT3hSJm2_he0z4/edit?usp=sharing">Code of Conduct</Nav.Link>
+              <Nav.Link target="_blank" href="mailto:contact@neworleansgamedev.com">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
