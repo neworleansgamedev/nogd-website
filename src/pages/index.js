@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import ExampleCalendar from "../components/calendar";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import nogdImage from "../images/nogd.png";
 import nogd4Image from "../images/nogd4.jpg"; 
@@ -27,6 +27,7 @@ function IndexPage() {
               </Card.Text>
             </Card.Body>
           </Card>
+          
         </Col>
         <Col xs={4} lg={4}>
           <Card>
